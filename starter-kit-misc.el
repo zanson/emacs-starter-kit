@@ -59,6 +59,13 @@
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
 
+;; Matching parentheses for all languages and so on
+(setq skeleton-pair t)
+(define-key global-map "(" 'skeleton-pair-insert-maybe)
+(define-key global-map "[" 'skeleton-pair-insert-maybe)
+(define-key global-map "{" 'skeleton-pair-insert-maybe)
+(define-key global-map "\"" 'skeleton-pair-insert-maybe)
+
 ;; ido-mode is like magic pixie dust!
 (when (> emacs-major-version 21)
   (ido-mode t)

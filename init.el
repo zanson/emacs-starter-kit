@@ -25,6 +25,7 @@
 (add-to-list 'load-path dotfiles-dir)
 
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
+(add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/auto-complete"))
 
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
@@ -43,6 +44,8 @@
 (require 'uniquify)
 (require 'ansi-color)
 (require 'recentf)
+(require 'open-next-line)
+(require 'tramp)
 
 ;; backport some functionality to Emacs 22 if needed
 (require 'dominating-file)
@@ -58,6 +61,8 @@
 (require 'starter-kit-perl)
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
+(require 'starter-kit-python)
+(require 'starter-kit-completion)
 
 (regen-autoloads)
 (load custom-file 'noerror)
