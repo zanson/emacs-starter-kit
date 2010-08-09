@@ -60,11 +60,8 @@
 (show-paren-mode 1)
 
 ;; Matching parentheses for all languages and so on
-(setq skeleton-pair t)
-(define-key global-map "(" 'skeleton-pair-insert-maybe)
-(define-key global-map "[" 'skeleton-pair-insert-maybe)
-(define-key global-map "{" 'skeleton-pair-insert-maybe)
-(define-key global-map "\"" 'skeleton-pair-insert-maybe)
+(autopair-global-mode t)
+(setq autopair-autowrap t) 
 
 ;; ido-mode is like magic pixie dust!
 (when (> emacs-major-version 21)
