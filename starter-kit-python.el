@@ -12,16 +12,13 @@
 
            (concat dotfiles-dir "rope-dist")))
 
-
-
-  ;; TODO: We need something like add-to-list?
-
-  (setq pymacs-load-path
-
-        (list
-
-         (concat dotfiles-dir "python-libs/")))
-
+  (setenv "PYTHONPATH"
+          
+          (concat
+           
+           (getenv "PYTHONPATH") ":"
+           
+           (concat dotfiles-dir "python-libs/")))
 
 
   (pymacs-load "ropemacs" "rope-")
