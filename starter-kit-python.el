@@ -268,14 +268,6 @@ is passed after the options."
 
   )
 
-
-
-;; Debugger section, for now I don't bundle it
-
-(require 'dbgr)
-
-
-
 ;; Cython Mode
 
 (autoload 'cython-mode "cython-mode" "Mode for editing Cython source files")
