@@ -1,4 +1,5 @@
 ;; starter-kit-python.el - setup of python stuff
+(require 'pymacs)
 
 (defun setup-ropemacs ()
 
