@@ -1,5 +1,5 @@
 ;; starter-kit-python.el - setup of python stuff
-(load-file "python-libs/pymacs.el")
+(load-file (concat dotfiles-dir "python-libs/pymacs.el"))
 (require 'pymacs)
 
 (defun setup-ropemacs ()
