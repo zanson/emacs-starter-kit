@@ -5,11 +5,7 @@
   "Setup the ropemacs harness"
   (setenv "PYTHONPATH"
           (concat
-           (getenv "PYTHONPATH") ":"
-           (concat dotfiles-dir "rope-dist")))
-  (setenv "PYTHONPATH"
-          (concat
-           (getenv "PYTHONPATH") ":"
+           (getenv "PYTHONPATH") path-separator
            (concat dotfiles-dir "python-libs/")))
   (pymacs-load "ropemacs" "rope-")
 
