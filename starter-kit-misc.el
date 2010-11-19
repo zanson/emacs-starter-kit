@@ -61,7 +61,14 @@
 
 ;; Matching parentheses for all languages and so on
 (autopair-global-mode t)
-(setq autopair-autowrap t) 
+(setq autopair-autowrap t)
+;; Fix for triple quotes in python
+(add-hook 'python-mode-hook
+          #'(lambda ()
+              (setq autopair-handle-action-fns
+                    (list #'autopair-default-handle-action
+                          #'autopair-python-triple-quote-action))))
+
 
 ;; ido-mode is like magic pixie dust!
 (when (> emacs-major-version 21)
