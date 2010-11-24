@@ -27,6 +27,7 @@
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/auto-complete"))
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/emacs-dbgr"))
+(add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/yasnippet"))
 
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
@@ -48,6 +49,7 @@
 (require 'open-next-line)
 (require 'tramp)
 (require 'autopair)
+(require 'yasnippet)
 
 ;; backport some functionality to Emacs 22 if needed
 (require 'dominating-file)
