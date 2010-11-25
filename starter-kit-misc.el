@@ -161,6 +161,7 @@
 ;; Yasnippet setup
 (yas/initialize)
 (yas/load-directory (concat dotfiles-dir "elpa-to-submit/yasnippet/snippets"))
+(setq yas/prompt-functions '(yas/dropdown-prompt yas/ido-prompt yas/x-prompt))
 (setq yas/wrap-around-region 'cua)
 
 (provide 'starter-kit-misc)
