@@ -1,3 +1,24 @@
+# Emacs Starter Kit - Python Version
+
+This fork of Emacs Starter Kit is the result of the merge between the
+original [Emacs Starter
+Kit](http://github.com/technomancy/emacs-starter-kit/) and [Emacs For
+Python](https://github.com/gabrielelanaro/emacs-for-python), this was
+done because of the common purpose of the two packages.
+
+I'm keeping all the tracking in the emacs-for python project page:
+
+- Project Page https://github.com/gabrielelanaro/emacs-for-python
+- Docs/Suggestions/Configurations https://github.com/gabrielelanaro/emacs-for-python/wiki
+- Issue Tracker https://github.com/gabrielelanaro/emacs-for-python/issues
+
+## Note 
+
+The additional dependencies are:
+
+- python
+- flymake
+
 # Emacs Starter Kit
 
 The Starter Kit should provide a saner set of defaults than you get
