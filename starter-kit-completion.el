@@ -1,6 +1,7 @@
 ;;; starter-kit-completion.el --- A few common completion tricks
 (defun ac-eshell-mode-setup ()
   (add-to-list 'ac-sources 'ac-source-files-in-current-dir))
+
 ;; Live completion with auto-complete
 ;; (see http://cx4a.org/software/auto-complete/)
 (require 'auto-complete-config nil t)
